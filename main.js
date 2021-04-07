@@ -16,8 +16,11 @@ const selectRandomMessage = arr => {
 }
 
 const dailyMessage = () => {
-    `Today is ${new Date(Date.now()).toDateString()}. Today your mood will be ${selectRandomMessage(moods)}. Maybe this is good for you, maybe not. However, here a thought for you: ${selectRandomMessage(thoughts)}. OK, you want more. So, here's an inspiring message: ${selectRandomMessage(inspiring)}. That's it for today. Come back tomorrow for more!`
+    return `Today is ${new Date(Date.now()).toDateString()}. Today your mood will be ${selectRandomMessage(moods)}. Maybe this is good for you, maybe not. However, here a thought for you: ${selectRandomMessage(thoughts)}. OK, you want more. So, here's an inspiring message: ${selectRandomMessage(inspiring)}. That's it for today. Come back tomorrow for more!`
 }
+
+console.log(dailyMessage());
+
 
 
 
